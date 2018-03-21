@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 21 16:52:19 CET 2018
+#Wed Mar 21 16:57:55 CET 2018
 56.path=www/bootstrap/css/bootstrap-reboot.css
 5.base=E\:\\Cours\\WorkShop2018\\WorkShop2018App\\CDPapp\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 42.base=E\:\\Cours\\WorkShop2018\\WorkShop2018App\\CDPapp\\platforms\\android\\app\\build\\intermediates\\assets\\debug
