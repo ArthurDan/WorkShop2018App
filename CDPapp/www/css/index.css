@@ -231,3 +231,35 @@ a{
 	margin-right: 15px;
 	font-family: "JosefinSans";
 }
+
+.headerimg{
+	margin-top: 1px;
+	border-bottom: solid 1px black;
+}
+
+.aboutimg{
+	width: 100%;
+	height: 100%;
+}
+
+.contentAbout{
+	margin-top: 20px;
+}
+.contentContact{
+	margin-top: 120px;
+}
+
+.aboutTitle{
+	font-family: "JosefinSans";
+	
+}
+
+.textAbout{
+	margin: 20px;
+}
+
+.adress{
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top:30px;
+}
