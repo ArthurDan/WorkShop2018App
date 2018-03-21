@@ -7,112 +7,153 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         
         <title>Hello World</title>
     </head>
     <body>
-       <div class="header">
-       		<div class="container blur">
-       			<div class="logoMenu">
-       				<a id="menu" onclick="showMenu('#menuSlide')"></a>
-       			</div>
-       			<div class="logoDiv">
-       				<img class="logo" src="img/title.png">
-       			</div>       				
-       		</div>       	
-       </div>
-       <div class="menu" id="#menuSlide">
-       		<ul>
-       			<li class="liMenu">Menu<a id="closeMenu"></a></li>
-       			<li><a class="products" href="index.html">Products</a></li>
-       			<li><a class="contact" href="contact.html">Contact</a></li>
-       			<li><a class="aboutUs" href="aboutus.html">About Us</a></li>
-       		</ul>
-       </div>
-       <div id="main" class="container main">
-       		<div class="row">
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row"> 
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>
-       				</div>
-       			</div>
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row">
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
-       				</div>
-       			</div>
-       		</div>
-       		<div class="row">
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row"> 
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>
-       				</div>
-       			</div>
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row">
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
-       				</div>
-       			</div>
-       		</div>
-       		<div class="row">
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row"> 
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>
-       				</div>
-       			</div>
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row">
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
-       				</div>
-       			</div>
-       		</div>
-       		<div class="row">
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row"> 
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>
-       				</div>
-       			</div>
-       			<div class="col-6 col-sm-6 col-md-6 ">
-       				<div class="row">
-       					<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
-       				</div>
-       				<div class="row infoProduct">
-       					<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
-       				</div>
-       			</div>
-       		</div>
-       		
-       </div>       
+       
+       <div class="wrapper">
+		   <div class="header">
+				<div class="container blur">
+					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+						<i class="glyphicon glyphicon-align-left"></i>
+					</button> 
+					<div class="logoDiv">
+						<img class="logo" src="img/title.png">
+					</div>				      				
+				</div>       	
+		   	</div>
+			<nav id="sidebar">
+				<div id="dismiss">
+					<i class="glyphicon glyphicon-arrow-left"></i>
+				</div>
+				<!-- Sidebar Header -->
+				<div class="sidebar-header">
+					<li class="liMenu">Menu</li>
+				</div>
+
+				<!-- Sidebar Links -->
+				<ul class="list-unstyled components">
+					<li><a class="products" href="index.html">Products</a></li>
+					<li><a class="contact" href="contact.html">Contact</a></li>
+					<li><a class="aboutUs" href="aboutus.html">About Us</a></li>
+				</ul>
+			</nav>
+			<div id="content">
+				<div id="main" class="container main">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row"> 
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row">
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row"> 
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row">
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row"> 
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row">
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row"> 
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 ">
+							<div class="row">
+								<img class="imgProduct" src="img/cube-de-savon-de-marseille-400g-olive-.jpg">      					
+							</div>
+							<div class="row infoProduct">
+								<p class="infoText">Cube de savon de Marseille 400g Olive</p>       					
+							</div>
+						</div>
+					</div>      		
+				</div>	
+			</div>  
+			<div class="overlay"><div> 
+		</div>
+           
         <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>        
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript">
-			 
-        function showMenu(bloc){          
-          $(bloc).toggleClass('menu');  
-    }
+        <script type="text/javascript" src="cordova.js"></script><script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<!-- Bootstrap Js CDN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+			$(document).ready(function () {
+
+				$("#sidebar").mCustomScrollbar({
+					theme: "minimal"
+				});
+
+				// when opening the sidebar
+				$('#sidebarCollapse').on('click', function () {
+					// open sidebar
+					$('#sidebar').addClass('active');
+					// fade in the overlay
+					$('.overlay').fadeIn();
+					$('.collapse.in').toggleClass('in');
+					$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+				});
+
+
+				// if dismiss or overlay was clicked
+				$('#dismiss, .overlay').on('click', function () {
+				  // hide the sidebar
+				  $('#sidebar').removeClass('active');
+				  // fade out the overlay
+				  $('.overlay').fadeOut();
+				});
+			});
 		</script>
     </body>
 </html>
